@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2DA862E211A8BF000FED7B0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2DA862D211A8BF000FED7B0 /* main.cpp */; };
+		D2DA8636211A8C3A00FED7B0 /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2DA8634211A8C3A00FED7B0 /* String.cpp */; };
+		D2DA863D211A8D9F00FED7B0 /* StringDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2DA863C211A8D9F00FED7B0 /* StringDriver.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D2DA862A211A8BF000FED7B0 /* Inheritance Lab */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Inheritance Lab"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2DA862D211A8BF000FED7B0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D2DA862A211A8BF000FED7B0 /* Inheritance_Lab */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Inheritance_Lab; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2DA8634211A8C3A00FED7B0 /* String.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = String.cpp; sourceTree = "<group>"; };
+		D2DA8635211A8C3A00FED7B0 /* String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = String.h; sourceTree = "<group>"; };
+		D2DA863B211A8D7D00FED7B0 /* StringDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringDriver.h; sourceTree = "<group>"; };
+		D2DA863C211A8D9F00FED7B0 /* StringDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringDriver.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +45,7 @@
 		D2DA8621211A8BEF00FED7B0 = {
 			isa = PBXGroup;
 			children = (
-				D2DA862C211A8BF000FED7B0 /* Inheritance Lab */,
+				D2DA862C211A8BF000FED7B0 /* CacayorinAileen-StringLab */,
 				D2DA862B211A8BF000FED7B0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +53,28 @@
 		D2DA862B211A8BF000FED7B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2DA862A211A8BF000FED7B0 /* Inheritance Lab */,
+				D2DA862A211A8BF000FED7B0 /* Inheritance_Lab */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D2DA862C211A8BF000FED7B0 /* Inheritance Lab */ = {
+		D2DA862C211A8BF000FED7B0 /* CacayorinAileen-StringLab */ = {
 			isa = PBXGroup;
 			children = (
-				D2DA862D211A8BF000FED7B0 /* main.cpp */,
+				D2DA8635211A8C3A00FED7B0 /* String.h */,
+				D2DA8634211A8C3A00FED7B0 /* String.cpp */,
+				D2DA863B211A8D7D00FED7B0 /* StringDriver.h */,
+				D2DA863C211A8D9F00FED7B0 /* StringDriver.cpp */,
 			);
-			path = "Inheritance Lab";
+			path = "CacayorinAileen-StringLab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D2DA8629211A8BEF00FED7B0 /* Inheritance Lab */ = {
+		D2DA8629211A8BEF00FED7B0 /* Inheritance_Lab */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2DA8631211A8BF000FED7B0 /* Build configuration list for PBXNativeTarget "Inheritance Lab" */;
+			buildConfigurationList = D2DA8631211A8BF000FED7B0 /* Build configuration list for PBXNativeTarget "Inheritance_Lab" */;
 			buildPhases = (
 				D2DA8626211A8BEF00FED7B0 /* Sources */,
 				D2DA8627211A8BEF00FED7B0 /* Frameworks */,
@@ -77,9 +84,9 @@
 			);
 			dependencies = (
 			);
-			name = "Inheritance Lab";
+			name = Inheritance_Lab;
 			productName = "Inheritance Lab";
-			productReference = D2DA862A211A8BF000FED7B0 /* Inheritance Lab */;
+			productReference = D2DA862A211A8BF000FED7B0 /* Inheritance_Lab */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D2DA8625211A8BEF00FED7B0 /* Build configuration list for PBXProject "Inheritance Lab" */;
+			buildConfigurationList = D2DA8625211A8BEF00FED7B0 /* Build configuration list for PBXProject "Inheritance_Lab" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2DA8629211A8BEF00FED7B0 /* Inheritance Lab */,
+				D2DA8629211A8BEF00FED7B0 /* Inheritance_Lab */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +126,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2DA862E211A8BF000FED7B0 /* main.cpp in Sources */,
+				D2DA863D211A8D9F00FED7B0 /* StringDriver.cpp in Sources */,
+				D2DA8636211A8C3A00FED7B0 /* String.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +258,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D2DA8625211A8BEF00FED7B0 /* Build configuration list for PBXProject "Inheritance Lab" */ = {
+		D2DA8625211A8BEF00FED7B0 /* Build configuration list for PBXProject "Inheritance_Lab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2DA862F211A8BF000FED7B0 /* Debug */,
@@ -259,7 +267,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2DA8631211A8BF000FED7B0 /* Build configuration list for PBXNativeTarget "Inheritance Lab" */ = {
+		D2DA8631211A8BF000FED7B0 /* Build configuration list for PBXNativeTarget "Inheritance_Lab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2DA8632211A8BF000FED7B0 /* Debug */,
