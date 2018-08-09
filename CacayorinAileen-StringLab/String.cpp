@@ -56,7 +56,11 @@ String::String(int n) {
 
 String::String(const String& strng) {
     length = strng.length;
-    buf = strng.buf;
+    buf = new char[length];
+    for (int i=0; i < length; i++) {
+        buf[i] = strng.buf[i];
+    }
+    
 };
 
 String::String(char lttr, int n) {
@@ -73,7 +77,7 @@ String::~String() {
     length = 0;
 }
 
-//***  operator overloaders   ***//
+//***  assignment operator overloaders   ***//
 
 String& String::operator=(const String& rtStrng) {
     length = rtStrng.length;
@@ -92,6 +96,135 @@ String& String::operator=(const char* rtChar) {
     return *this;
 };
 
+//***  concatenation operator overloaders   ***//
+
+String operator+(const String& a1, const String& a2) {
+    int newLength = a1.length + a2.length;
+    
+    String temp(newLength);
+    
+    for (int i=0; i < a1.length; i++) {
+        temp.buf[i] = a1.buf[i];
+    };
+    
+    for (int j=0, i= a1.length; j < a2.length; i++, j++ ) {
+        temp.buf[i] = a2.buf[j];
+    };
+    temp.length = newLength;
+    temp.buf[newLength] = '\0';
+    return temp;
+};
+
+String operator+(const String& strng, const char* chr) {
+    int newLength = strng.length + int(strlen(chr));
+    String temp;
+    temp.buf = new char[newLength];
+    temp.length = newLength;
+    
+    for (int i = 0; i < strng.length; i++) {
+        temp.buf[i] = strng.buf[i];
+    }
+    
+    for (int j = 0, i = strng.length; j < strlen(chr); j++, i++) {
+        temp.buf[i] = chr[j];
+    }
+    temp.buf[newLength] = '\0';
+    
+    return temp;
+};
+
+String operator+(const char* chr, const String& strng)
+{
+    int newLength = strng.length + int(strlen(chr));
+    String temp;
+    temp.buf = new char[newLength];
+    temp.length = newLength;
+
+    strcpy(temp.buf, chr);
+
+    for (int j = 0, i = int(strlen(chr)); j < strng.length; j++, i++) {
+        temp.buf[i] = strng.buf[j];
+    }
+
+    temp.buf[newLength] = '\0';
+
+    return temp;
+}
+
+String operator+(const String& strng, const char chr)
+{
+    int newLength = strng.length + 1;
+    String temp;
+    temp.buf = new char[newLength];
+    temp.length = newLength;
+
+    for (int i = 0; i < strng.length; i++) {
+        temp.buf[i] = strng.buf[i];
+    }
+
+    temp.buf[newLength - 1] = chr;
+    temp.buf[newLength] = '\0';
+
+    return temp;
+}
+
+String operator+(const char chr, const String& strng)
+{
+    int newLength = strng.length + 1;
+    String temp;
+    temp.buf = new char[newLength];
+    temp.length = newLength;
+    
+    temp.buf[0] = chr;
+    for (int i = 0, j = 1; i < strng.length; i++, j++) {
+        temp.buf[j] = strng.buf[i];
+    }
+    
+    temp.buf[newLength] = '\0';
+    
+    return temp;
+}
+
+String& String::operator+=(const String& strng) {
+    int newLength = length + strng.length;
+    char* temp = new char[newLength];
+
+    int i, j;
+    for (i=0; i < length; i++) {
+        temp[i] = buf[i];
+    }
+
+    for (i=length, j= 0; j < strng.length; i++, j++) {
+        temp[i] = strng.buf[j];
+    }
+
+    delete [] buf;
+    buf = new char[newLength];
+    length = newLength;
+
+    for (i = 0; i < length; i++) {
+        
+        buf[i] = temp[i];
+    }
+    buf[newLength] = '\0';
+    
+    delete [] temp;
+
+    return *this;
+
+};
+
+//*** unary overloading **//
+
+String String::operator+() const {
+    String temp(*this);
+    
+    for (int i = 0; i < length; i++){
+        temp.buf[i] = toupper(temp.buf[i]);
+    }
+    
+    return temp;
+}
 
 //*** member functions  ***//
 
@@ -100,8 +233,13 @@ int String::getLength() const {
 };
 
 void String::print() {
-    cout << "\"" << buf << "\"" << " " << "Length = " << length << endl;
-    csis << "\"" << buf << "\"" << " " << "Length = " << length << endl;
+//    cout << "\"" << buf << "\"" << " " << "Length = " << length << endl;
+//    csis << "\"" << buf << "\"" << " " << "Length = " << length << endl;
+    
+//    cout << "\"";
+//    for (int i=0; i<length; i++) {
+//        cout << buf[i];
+//    }
 }
 
 

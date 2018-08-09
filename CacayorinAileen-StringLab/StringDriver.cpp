@@ -20,10 +20,10 @@ int main() {
     test6();
     test7();
     test8();
-//    test9();
-//    test10();
-//    test11();
-//    test12();
+    test9();
+    test10();
+    test11();
+    test12();
 //    test13();
 //    test14();
 //    test15();
@@ -105,50 +105,50 @@ void test8() {
     wait();
 }
 
-//void test9() {
-//    cout << "9. Testing S9: Implicit type conversion." << endl << endl;
-//    csis << "9. Testing S9: Implicit type conversion." << endl << endl;
-//    String s9;
-//    s9 = "ABC";
-//    s9.print();
-//    wait();
-//}
-//
-//void test10() {
-//    cout << "10. Testing S10, T10, U10: String concatenation." << endl << endl;
-//    csis << "10. Testing S10, T10, U10: String concatenation." << endl << endl;
-//    String s10("DEF");
-//    String t10('H');
-//    String u10("ABC" + s10 + "G" + t10 + 'I');
-//    u10.print();
-//    String v10('X' + u10);
-//    v10.print();
-//    wait();
-//}
-//
-//void test11() {
-//    cout << "11. Testing S11, T11: String concatenation." << endl << endl;
-//    csis << "11. Testing S11, T11: String concatenation." << endl << endl;
-//    String s11('A');
-//    String t11("BC");
-//    s11 += s11 += t11 += 'D';
-//    s11.print();
-//    t11.print();
-//    wait();
-//}
-//
-//void test12() {
-//    cout << "12. Testing S12, T12: String unary operator." << endl << endl;
-//    csis << "12. Testing S12, T12: String unary operator." << endl << endl;
-//    String s12("Unary +");
-//    String t12(+s12);
-//    s12.print();
-//    t12.print();
-//    s12 = +s12;
-//    s12.print();
-//    wait();
-//}
-//
+void test9() {
+    cout << "9. Testing S9: Implicit type conversion." << endl << endl;
+    csis << "9. Testing S9: Implicit type conversion." << endl << endl;
+    String s9;
+    s9 = "ABC";
+    s9.print();
+    wait();
+}
+
+void test10() {
+    cout << "10. Testing S10, T10, U10: String concatenation." << endl << endl;
+    csis << "10. Testing S10, T10, U10: String concatenation." << endl << endl;
+    String s10("DEF");
+    String t10('H');
+    String u10("ABC" + s10 + "G" + t10 + 'I');
+    u10.print();
+    String v10('X' + u10);
+    v10.print();
+    wait();
+}
+
+void test11() {
+    cout << "11. Testing S11, T11: String concatenation." << endl << endl;
+    csis << "11. Testing S11, T11: String concatenation." << endl << endl;
+    String s11('A');
+    String t11("BC");
+    s11 += s11 += t11 += 'D';
+    s11.print();
+    t11.print();
+    wait();
+}
+
+void test12() {
+    cout << "12. Testing S12, T12: String unary operator." << endl << endl;
+    csis << "12. Testing S12, T12: String unary operator." << endl << endl;
+    String s12("Unary +");
+    String t12(+s12);
+    s12.print();
+    t12.print();
+    s12 = +s12;
+    s12.print();
+    wait();
+}
+
 //void test13() {
 //    cout << "13. Testing S13, T13: String comparison operators." << endl << endl;
 //    csis << "13. Testing S13, T13: String comparison operators." << endl << endl;
