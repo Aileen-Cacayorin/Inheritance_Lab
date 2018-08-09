@@ -42,6 +42,14 @@ class String {
     
         //unary overloading
         String operator+() const;                                       // returns String in uppercase
+    
+        //comparison overloading
+        friend int operator>=(const String&, const String&);
+        friend int operator==(const String&, const String&);
+        friend int operator!=(const String&, const String&);
+        friend int operator< (const String&, const String&);
+        friend int operator<=(const String&, const String&);
+        friend int operator> (const String&, const String&);
 
     
         void print();                                                   // prints string and string length

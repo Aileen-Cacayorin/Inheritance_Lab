@@ -226,6 +226,31 @@ String String::operator+() const {
     return temp;
 }
 
+//*** comparison overloading ***//
+int operator==(const String& strng1, const String& strng2){
+    return strng1.buf == strng2.buf;
+};
+
+int operator!=(const String& strng1, const String& strng2){
+    return strng1.buf != strng2.buf;
+};
+
+int operator< (const String& strng1, const String& strng2) {
+    return strng1.buf < strng2.buf;
+};
+
+int operator<=(const String& strng1, const String& strng2) {
+    return strng1.length <= strng2.length;
+};
+
+int operator> (const String& strng1, const String& strng2) {
+    return strng1.length > strng2.length;
+};
+
+int operator>=(const String& strng1, const String& strng2) {
+    return strng1.length >= strng2.length;
+};
+
 //*** member functions  ***//
 
 int String::getLength() const {

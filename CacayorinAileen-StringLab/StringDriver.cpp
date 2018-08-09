@@ -24,7 +24,7 @@ int main() {
     test10();
     test11();
     test12();
-//    test13();
+    test13();
 //    test14();
 //    test15();
 //    test16();
@@ -149,28 +149,28 @@ void test12() {
     wait();
 }
 
-//void test13() {
-//    cout << "13. Testing S13, T13: String comparison operators." << endl << endl;
-//    csis << "13. Testing S13, T13: String comparison operators." << endl << endl;
-//    String s13("ABC"), t13("ABCD");
-//    s13.print();
-//    t13.print();
-//    cout << endl;
-//    cout << "== " << (s13 == t13 ? "True" : "False") << endl;
-//    cout << "!= " << (s13 != t13 ? "True" : "False") << endl;
-//    cout << "<  " << (s13 <  t13 ? "True" : "False") << endl;
-//    cout << "<= " << (s13 <= t13 ? "True" : "False") << endl;
-//    cout << ">  " << (s13 >  t13 ? "True" : "False") << endl;
-//    cout << ">= " << (s13 >= t13 ? "True" : "False") << endl;
-//    csis << endl;
-//    csis << "== " << (s13 == t13 ? "True" : "False") << endl;
-//    csis << "!= " << (s13 != t13 ? "True" : "False") << endl;
-//    csis << "<  " << (s13 <  t13 ? "True" : "False") << endl;
-//    csis << "<= " << (s13 <= t13 ? "True" : "False") << endl;
-//    csis << ">  " << (s13 >  t13 ? "True" : "False") << endl;
-//    csis << ">= " << (s13 >= t13 ? "True" : "False") << endl;
-//    wait();
-//}
+void test13() {
+    cout << "13. Testing S13, T13: String comparison operators." << endl << endl;
+    csis << "13. Testing S13, T13: String comparison operators." << endl << endl;
+    String s13("ABC"), t13("ABCD");
+    s13.print();
+    t13.print();
+    cout << endl;
+    cout << "== " << (s13 == t13 ? "True" : "False") << endl;
+    cout << "!= " << (s13 != t13 ? "True" : "False") << endl;
+    cout << "<  " << (s13 <  t13 ? "True" : "False") << endl;
+    cout << "<= " << (s13 <= t13 ? "True" : "False") << endl;
+    cout << ">  " << (s13 >  t13 ? "True" : "False") << endl;
+    cout << ">= " << (s13 >= t13 ? "True" : "False") << endl;
+    csis << endl;
+    csis << "== " << (s13 == t13 ? "True" : "False") << endl;
+    csis << "!= " << (s13 != t13 ? "True" : "False") << endl;
+    csis << "<  " << (s13 <  t13 ? "True" : "False") << endl;
+    csis << "<= " << (s13 <= t13 ? "True" : "False") << endl;
+    csis << ">  " << (s13 >  t13 ? "True" : "False") << endl;
+    csis << ">= " << (s13 >= t13 ? "True" : "False") << endl;
+    wait();
+}
 //
 //void test14() {
 //    cout << "14. Testing S14: Overloaded subscript operator." << endl << endl;
