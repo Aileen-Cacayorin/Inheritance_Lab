@@ -65,7 +65,7 @@ String::String(const String& strng) {
 
 String::String(char lttr, int n) {
     length = n;
-    buf = new char[length];
+    buf = new char[length+1];
     for (int i=0; i < n; i++) {
         buf[i] = lttr;
     };
@@ -87,7 +87,7 @@ String& String::operator=(const String& rtStrng) {
 
 String& String::operator=(const char* rtChar) {
     length = int(strlen(rtChar));
-    buf = new char[length];
+    buf = new char[length+1];
     
     for (int i=0; i<length; i++) {
         buf[i] = rtChar[i];
@@ -118,7 +118,7 @@ String operator+(const String& a1, const String& a2) {
 String operator+(const String& strng, const char* chr) {
     int newLength = strng.length + int(strlen(chr));
     String temp;
-    temp.buf = new char[newLength];
+    temp.buf = new char[newLength+1];
     temp.length = newLength;
     
     for (int i = 0; i < strng.length; i++) {
@@ -137,7 +137,7 @@ String operator+(const char* chr, const String& strng)
 {
     int newLength = strng.length + int(strlen(chr));
     String temp;
-    temp.buf = new char[newLength];
+    temp.buf = new char[newLength+1];
     temp.length = newLength;
 
     strcpy(temp.buf, chr);
@@ -155,7 +155,7 @@ String operator+(const String& strng, const char chr)
 {
     int newLength = strng.length + 1;
     String temp;
-    temp.buf = new char[newLength];
+    temp.buf = new char[newLength+1];
     temp.length = newLength;
 
     for (int i = 0; i < strng.length; i++) {
@@ -170,9 +170,9 @@ String operator+(const String& strng, const char chr)
 
 String operator+(const char chr, const String& strng)
 {
-    int newLength = strng.length + 1;
+    int newLength = strng.length+1;
     String temp;
-    temp.buf = new char[newLength];
+    temp.buf = new char[newLength+1];
     temp.length = newLength;
     
     temp.buf[0] = chr;
@@ -187,7 +187,7 @@ String operator+(const char chr, const String& strng)
 
 String& String::operator+=(const String& strng) {
     int newLength = length + strng.length;
-    char* temp = new char[newLength];
+    char* temp = new char[newLength+1];
 
     int i, j;
     for (i=0; i < length; i++) {
@@ -199,7 +199,7 @@ String& String::operator+=(const String& strng) {
     }
 
     delete [] buf;
-    buf = new char[newLength];
+    buf = new char[newLength+1];
     length = newLength;
 
     for (i = 0; i < length; i++) {
@@ -233,8 +233,8 @@ int String::getLength() const {
 };
 
 void String::print() {
-//    cout << "\"" << buf << "\"" << " " << "Length = " << length << endl;
-//    csis << "\"" << buf << "\"" << " " << "Length = " << length << endl;
+    cout << "\"" << buf << "\"" << " " << "Length = " << length << endl;
+    csis << "\"" << buf << "\"" << " " << "Length = " << length << endl;
     
 //    cout << "\"";
 //    for (int i=0; i<length; i++) {
