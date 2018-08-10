@@ -4,7 +4,7 @@
 #define _STRINGDRIVER_H
 
 #include "String.h"
-//#include "ReverseString.h"
+#include "Reverse.h"
 //#include "CaseString.h"
 
 int main();

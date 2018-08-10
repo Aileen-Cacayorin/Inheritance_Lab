@@ -30,7 +30,7 @@ int main() {
     test16();
     test17();
     test18();
-//    test19();
+    test19();
 //    test20();
 //    csis.close();
 }
@@ -247,21 +247,21 @@ void test18() {
     csis << endl;
     wait();
 }
-//
-//void test19() {
-//    cout << "19. Testing S19, T19, U19: ReverseString class." << endl << endl;
-//    csis << "19. Testing S19, T19, U19: ReverseString class." << endl << endl;
-//    ReverseString s19("Computer");
-//    ReverseString t19;
-//    t19 = ~s19;
-//    s19.print();
-//    t19.print();
-//    
-//    ReverseString u19(~~s19);
-//    u19.print();
-//    wait();
-//}
-//
+
+void test19() {
+    cout << "19. Testing S19, T19, U19: ReverseString class." << endl << endl;
+    csis << "19. Testing S19, T19, U19: ReverseString class." << endl << endl;
+    ReverseString s19("Computer");
+    ReverseString t19;
+    t19 = ~s19;
+    s19.print();
+    t19.print();
+    
+    ReverseString u19(~~s19);
+    u19.print();
+    wait();
+}
+
 //void test20() {
 //    cout << "20. Testing S20, T20, U20: CaseString class." << endl << endl;
 //    csis << "20. Testing S20, T20, U20: CaseString class." << endl << endl;
