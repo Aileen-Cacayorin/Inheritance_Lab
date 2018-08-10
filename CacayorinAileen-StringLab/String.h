@@ -58,14 +58,18 @@ class String {
         friend char* operator+(const String&, int);
         friend char* operator+(int, const String&);
     
-        void print();                                                   // prints string and string length
-        int getLength() const;                                          // returns string length
-    
         //* overloading increment and decrement operators *//
         String& operator++();
         String& operator--();
         String& operator++(int);
         String& operator--(int);
+    
+        String substr(int, int);                                        // substring function
+        int getLength() const;                                          // returns string length
+        void print();                                                   // prints string and string length
+    
+    
+    
 
 };
 

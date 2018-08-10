@@ -304,7 +304,18 @@ char* operator+(int i, const String& strg) {
     return &strg.buf[i];
 }
 
+
 //*** member functions  ***//
+
+String String::substr(int start, int end) {
+    String s(end);
+    
+    for (int i = start, j = 0; j < end; i++, j++) {
+        s.buf[j] = buf[i];
+    }
+    s.buf[length] = '\0';
+    return s;
+};
 
 int String::getLength() const {
     return length;

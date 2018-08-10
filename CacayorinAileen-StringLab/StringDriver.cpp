@@ -28,7 +28,7 @@ int main() {
     test14();
     test15();
     test16();
-//    test17();
+    test17();
 //    test18();
 //    test19();
 //    test20();
@@ -224,16 +224,16 @@ void test16() {
     z16.print();
     wait();
 }
-//
-//void test17() {
-//    cout << "17. Testing S17, T17: Substr function." << endl << endl;
-//    csis << "17. Testing S17, T17: Substr function." << endl << endl;
-//    String s17("All You Need Is Love"), t17;
-//    t17 = s17.substr(4, 8);
-//    s17.print();
-//    t17.print();
-//    wait();
-//}
+
+void test17() {
+    cout << "17. Testing S17, T17: Substr function." << endl << endl;
+    csis << "17. Testing S17, T17: Substr function." << endl << endl;
+    String s17("All You Need Is Love"), t17;
+    t17 = s17.substr(4, 8);
+    s17.print();
+    t17.print();
+    wait();
+}
 //
 //void test18() {
 //    cout << "18. Testing S18, T18: Output function." << endl << endl;
