@@ -313,7 +313,7 @@ String String::substr(int start, int end) {
     for (int i = start, j = 0; j < end; i++, j++) {
         s.buf[j] = buf[i];
     }
-    s.buf[length] = '\0';
+    s.buf[end] = '\0';
     return s;
 };
 

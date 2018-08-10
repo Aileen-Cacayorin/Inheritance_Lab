@@ -16,9 +16,6 @@
 using namespace std;
 
 class ReverseString : public String {
-    private:
-        char* rbuf;
-    
     public:
         ReverseString();
         ReverseString(const ReverseString&);

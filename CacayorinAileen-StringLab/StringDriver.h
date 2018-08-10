@@ -5,7 +5,7 @@
 
 #include "String.h"
 #include "Reverse.h"
-//#include "CaseString.h"
+#include "Case.h"
 
 int main();
 void test1();

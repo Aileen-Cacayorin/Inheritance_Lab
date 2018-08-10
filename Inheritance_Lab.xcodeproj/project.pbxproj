@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D210A1F4211D455900301B55 /* Reverse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D210A1F2211D455900301B55 /* Reverse.cpp */; };
+		D210A1F7211D4F6200301B55 /* Case.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D210A1F5211D4F6200301B55 /* Case.cpp */; };
 		D2DA8636211A8C3A00FED7B0 /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2DA8634211A8C3A00FED7B0 /* String.cpp */; };
 		D2DA863D211A8D9F00FED7B0 /* StringDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2DA863C211A8D9F00FED7B0 /* StringDriver.cpp */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,8 @@
 /* Begin PBXFileReference section */
 		D210A1F2211D455900301B55 /* Reverse.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Reverse.cpp; sourceTree = "<group>"; };
 		D210A1F3211D455900301B55 /* Reverse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reverse.h; sourceTree = "<group>"; };
+		D210A1F5211D4F6200301B55 /* Case.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Case.cpp; sourceTree = "<group>"; };
+		D210A1F6211D4F6200301B55 /* Case.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Case.h; sourceTree = "<group>"; };
 		D2DA862A211A8BF000FED7B0 /* Inheritance_Lab */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Inheritance_Lab; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2DA8634211A8C3A00FED7B0 /* String.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = String.cpp; sourceTree = "<group>"; };
 		D2DA8635211A8C3A00FED7B0 /* String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = String.h; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 				D2DA863C211A8D9F00FED7B0 /* StringDriver.cpp */,
 				D210A1F2211D455900301B55 /* Reverse.cpp */,
 				D210A1F3211D455900301B55 /* Reverse.h */,
+				D210A1F5211D4F6200301B55 /* Case.cpp */,
+				D210A1F6211D4F6200301B55 /* Case.h */,
 			);
 			path = "CacayorinAileen-StringLab";
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D210A1F4211D455900301B55 /* Reverse.cpp in Sources */,
+				D210A1F7211D4F6200301B55 /* Case.cpp in Sources */,
 				D2DA863D211A8D9F00FED7B0 /* StringDriver.cpp in Sources */,
 				D2DA8636211A8C3A00FED7B0 /* String.cpp in Sources */,
 			);
