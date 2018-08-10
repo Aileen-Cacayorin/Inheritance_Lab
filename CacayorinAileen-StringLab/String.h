@@ -64,10 +64,12 @@ class String {
         String& operator++(int);
         String& operator--(int);
     
-        String substr(int, int);                                        // substring function
+        String substr(int, int);                                        // returns substring at start indes w specified length
         int getLength() const;                                          // returns string length
         void print();                                                   // prints string and string length
     
+        //* ostream overloading *//                                     // overloads cout
+        friend ostream& operator<<(ostream&, const String&);
     
     
 

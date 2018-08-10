@@ -29,7 +29,7 @@ int main() {
     test15();
     test16();
     test17();
-//    test18();
+    test18();
 //    test19();
 //    test20();
 //    csis.close();
@@ -234,19 +234,19 @@ void test17() {
     t17.print();
     wait();
 }
-//
-//void test18() {
-//    cout << "18. Testing S18, T18: Output function." << endl << endl;
-//    csis << "18. Testing S18, T18: Output function." << endl << endl;
-//    String s18("Red-");
-//    String t18("Green-");
-//    String u18("Blue");
-//    cout << s18 << t18 << u18;
-//    csis << s18 << t18 << u18;
-//    cout << endl;
-//    csis << endl;
-//    wait();
-//}
+
+void test18() {
+    cout << "18. Testing S18, T18: Output function." << endl << endl;
+    csis << "18. Testing S18, T18: Output function." << endl << endl;
+    String s18("Red-");
+    String t18("Green-");
+    String u18("Blue");
+    cout << s18 << t18 << u18;
+    csis << s18 << t18 << u18;
+    cout << endl;
+    csis << endl;
+    wait();
+}
 //
 //void test19() {
 //    cout << "19. Testing S19, T19, U19: ReverseString class." << endl << endl;

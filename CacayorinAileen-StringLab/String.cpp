@@ -325,11 +325,14 @@ void String::print() {
     cout << "\"" << buf << "\"" << " " << "Length = " << length << endl;
     csis << "\"" << buf << "\"" << " " << "Length = " << length << endl;
     
-//    cout << "\"";
-//    for (int i=0; i<length; i++) {
-//        cout << buf[i];
-//    }
-}
+};
+//*** cout overloader ***//
 
+ostream& operator<<(ostream& os, const String& strg) {
+    for (int i = 0; i < strg.length; i++) {
+        os << strg.buf[i];
+    }
+    return os;
+};
 
 
