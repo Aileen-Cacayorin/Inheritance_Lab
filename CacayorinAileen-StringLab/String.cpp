@@ -251,7 +251,7 @@ int operator>=(const String& strng1, const String& strng2) {
     return strng1.length >= strng2.length;
 };
 
-//*** overloading subscript operato ***//
+//*** overloading subscript operator ***//
 char& String::operator[](int elem) {
     static char chr = '\0';
     
@@ -262,6 +262,14 @@ char& String::operator[](int elem) {
     else {
         return buf[elem];
     }
+};
+
+char* operator+(const String& strg, int i) {
+    return &strg.buf[i];
+}
+
+char* operator+(int i, const String& strg) {
+    return &strg.buf[i];
 }
 
 //*** member functions  ***//

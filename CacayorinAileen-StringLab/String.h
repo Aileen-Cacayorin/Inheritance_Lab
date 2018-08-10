@@ -52,8 +52,11 @@ class String {
         friend int operator> (const String&, const String&);            // overlads > operator
     
         //* subscript overloading *//
-        char& operator[](int);
+        char& operator[](int);                                          //overloads [] operator
     
+        //* pointer notation overloading *//
+        friend char* operator+(const String&, int);
+        friend char* operator+(int, const String&);
     
         void print();                                                   // prints string and string length
         int getLength() const;                                          // returns string length

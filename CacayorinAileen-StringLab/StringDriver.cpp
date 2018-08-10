@@ -26,7 +26,7 @@ int main() {
     test12();
     test13();
     test14();
-//    test15();
+    test15();
 //    test16();
 //    test17();
 //    test18();
@@ -184,22 +184,22 @@ void test14() {
     s14.print();
     wait();
 }
-//
-//void test15() {
-//    cout << "15. Testing S15: Pointer notation." << endl << endl;
-//    csis << "15. Testing S15: Pointer notation." << endl << endl;
-//    String s15("ABCDE");
-//    for(int i = 0; i < s15.getLength(); i++)
-//        ++(*(s15+i));
-//    for (int j = 0; j < s15.getLength(); j++) {
-//        cout << *(j + s15);
-//        csis << *(j + s15);
-//    }
-//    cout << endl;
-//    csis << endl;
-//    wait();
-//}
-//
+
+void test15() {
+    cout << "15. Testing S15: Pointer notation." << endl << endl;
+    csis << "15. Testing S15: Pointer notation." << endl << endl;
+    String s15("ABCDE");
+    for(int i = 0; i < s15.getLength(); i++)
+        ++(*(s15+i));
+    for (int j = 0; j < s15.getLength(); j++) {
+        cout << *(j + s15);
+        csis << *(j + s15);
+    }
+    cout << endl;
+    csis << endl;
+    wait();
+}
+
 //void test16() {
 //    cout << "16. Testing S16, T16, U16, V16, W16, X16, Y16, Z16: Increment and decrement operators." << endl << endl;
 //    csis << "16. Testing S16, T16, U16, V16, W16, X16, Y16, Z16: Increment and decrement operators." << endl << endl;
