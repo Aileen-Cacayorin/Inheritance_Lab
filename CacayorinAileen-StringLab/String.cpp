@@ -236,7 +236,7 @@ int operator!=(const String& strng1, const String& strng2){
 };
 
 int operator< (const String& strng1, const String& strng2) {
-    return strng1.buf < strng2.buf;
+    return strng1.length < strng2.length;
 };
 
 int operator<=(const String& strng1, const String& strng2) {
