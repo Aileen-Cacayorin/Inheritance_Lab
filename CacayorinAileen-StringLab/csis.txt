@@ -121,10 +121,10 @@ Red-Green-Blue
 20. Testing S20, T20, U20: CaseString class.
 
 "BaLLooN" Length = 7
-Lower: "balloon" Upper: BALLOON
+Lower: "balloon" Upper: "BALLOON" 
 "BaLLooN" Length = 7
-Lower: "balloon" Upper: BALLOON
+Lower: "balloon" Upper: "BALLOON" 
 "BaLLooN" Length = 7
-Lower: "balloon" Upper: BALLOON
+Lower: "balloon" Upper: "BALLOON" 
 
 

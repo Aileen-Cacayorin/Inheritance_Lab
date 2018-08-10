@@ -54,8 +54,8 @@ CaseString& CaseString::operator=(const CaseString& cse) {
 void CaseString::print() {
     
     String::print();
-    cout << "Lower: \""  << lower <<"\" " <<"Upper: " << upper << endl;
-    csis << "Lower: \""  << lower <<"\" " <<"Upper: " << upper << endl;
+    cout << "Lower: \""  << lower <<"\" " <<"Upper: \"" << upper <<"\" " << endl;
+    csis << "Lower: \""  << lower <<"\" " <<"Upper: \"" << upper <<"\" " << endl;
 };
 
 CaseString::~CaseString() {
