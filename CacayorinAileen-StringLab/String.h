@@ -60,6 +60,12 @@ class String {
     
         void print();                                                   // prints string and string length
         int getLength() const;                                          // returns string length
+    
+        //* overloading increment and decrement operators *//
+        String& operator++();
+        String& operator--();
+        String& operator++(int);
+        String& operator--(int);
 
 };
 

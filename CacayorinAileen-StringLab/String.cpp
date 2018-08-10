@@ -264,6 +264,38 @@ char& String::operator[](int elem) {
     }
 };
 
+//*** increment and decrement operator overloading ***//
+String& String::operator++() {
+    for (int i = 0; i < length; i++) {
+        buf[i] = buf[i]+1;
+    }
+    
+    return *this;
+};
+
+String& String::operator--() {
+    for (int i = 0; i < length; i++) {
+        buf[i] = buf[i]-1;
+    }
+    
+    return *this;
+}
+
+
+String& String::operator++(int val){
+    static String temp(*this);
+    ++(*this);
+    
+    return temp;
+};
+
+String& String::operator--(int val) {
+    static String temp(*this);
+    --(*this);
+    
+    return temp;
+};
+
 char* operator+(const String& strg, int i) {
     return &strg.buf[i];
 }

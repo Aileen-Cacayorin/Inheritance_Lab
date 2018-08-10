@@ -27,7 +27,7 @@ int main() {
     test13();
     test14();
     test15();
-//    test16();
+    test16();
 //    test17();
 //    test18();
 //    test19();
@@ -200,30 +200,30 @@ void test15() {
     wait();
 }
 
-//void test16() {
-//    cout << "16. Testing S16, T16, U16, V16, W16, X16, Y16, Z16: Increment and decrement operators." << endl << endl;
-//    csis << "16. Testing S16, T16, U16, V16, W16, X16, Y16, Z16: Increment and decrement operators." << endl << endl;
-//    String s16("ABC");
-//    String t16(++s16);
-//    s16.print();
-//    t16.print();
-//    
-//    String u16("ABC");
-//    String v16(u16++);
-//    u16.print();
-//    v16.print();
-//    
-//    String w16("ABC");
-//    String x16(--w16);
-//    w16.print();
-//    x16.print();
-//    
-//    String y16("ABC");
-//    String z16(y16--);
-//    y16.print();
-//    z16.print();
-//    wait();
-//}
+void test16() {
+    cout << "16. Testing S16, T16, U16, V16, W16, X16, Y16, Z16: Increment and decrement operators." << endl << endl;
+    csis << "16. Testing S16, T16, U16, V16, W16, X16, Y16, Z16: Increment and decrement operators." << endl << endl;
+    String s16("ABC");
+    String t16(++s16);
+    s16.print();
+    t16.print();
+    
+    String u16("ABC");
+    String v16(u16++);
+    u16.print();
+    v16.print();
+    
+    String w16("ABC");
+    String x16(--w16);
+    w16.print();
+    x16.print();
+    
+    String y16("ABC");
+    String z16(y16--);
+    y16.print();
+    z16.print();
+    wait();
+}
 //
 //void test17() {
 //    cout << "17. Testing S17, T17: Substr function." << endl << endl;
