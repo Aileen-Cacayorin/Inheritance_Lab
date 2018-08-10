@@ -50,7 +50,7 @@ String::String(int n) {
     } else {
         length = n;
     };
-    buf = new char[length];
+    buf = new char[length+1];
     buf[0] = '\0';
 };
 
