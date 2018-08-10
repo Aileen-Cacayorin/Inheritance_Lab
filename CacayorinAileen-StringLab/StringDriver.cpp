@@ -25,7 +25,7 @@ int main() {
     test11();
     test12();
     test13();
-//    test14();
+    test14();
 //    test15();
 //    test16();
 //    test17();
@@ -172,18 +172,18 @@ void test13() {
     wait();
 }
 //
-//void test14() {
-//    cout << "14. Testing S14: Overloaded subscript operator." << endl << endl;
-//    csis << "14. Testing S14: Overloaded subscript operator." << endl << endl;
-//    String s14("C++ is fun.");
-//    for (int i = -1; i <= s14.getLength(); i++) {
-//        char& ch = s14[i];
-//        if (ch != '\0')
-//            ++ch;
-//    }
-//    s14.print();
-//    wait();
-//}
+void test14() {
+    cout << "14. Testing S14: Overloaded subscript operator." << endl << endl;
+    csis << "14. Testing S14: Overloaded subscript operator." << endl << endl;
+    String s14("C++ is fun.");
+    for (int i = -1; i <= s14.getLength(); i++) {
+        char& ch = s14[i];
+        if (ch != '\0')
+            ++ch;
+    }
+    s14.print();
+    wait();
+}
 //
 //void test15() {
 //    cout << "15. Testing S15: Pointer notation." << endl << endl;

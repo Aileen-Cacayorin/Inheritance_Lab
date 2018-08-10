@@ -40,17 +40,20 @@ class String {
         friend String operator+(const char, const String&);             // overloads + operator with char and String
         String& operator+=(const String&);                              // overloads + operator and stores two arguments in left
     
-        //unary overloading
+        //* unary overloading *//
         String operator+() const;                                       // returns String in uppercase
     
-        //comparison overloading
-        friend int operator>=(const String&, const String&);
-        friend int operator==(const String&, const String&);
-        friend int operator!=(const String&, const String&);
-        friend int operator< (const String&, const String&);
-        friend int operator<=(const String&, const String&);
-        friend int operator> (const String&, const String&);
-
+        //* comparison overloading *//
+        friend int operator>=(const String&, const String&);            // overloads >= operator
+        friend int operator==(const String&, const String&);            // overloads == operator
+        friend int operator!=(const String&, const String&);            // overloads != operator
+        friend int operator< (const String&, const String&);            // overloads < operator
+        friend int operator<=(const String&, const String&);            // overloads <= operator
+        friend int operator> (const String&, const String&);            // overlads > operator
+    
+        //* subscript overloading *//
+        char& operator[](int);
+    
     
         void print();                                                   // prints string and string length
         int getLength() const;                                          // returns string length

@@ -251,6 +251,19 @@ int operator>=(const String& strng1, const String& strng2) {
     return strng1.length >= strng2.length;
 };
 
+//*** overloading subscript operato ***//
+char& String::operator[](int elem) {
+    static char chr = '\0';
+    
+    if (elem < 0 || elem > length) {
+        cout << "Error: Index is out of range." << endl;
+        return chr;
+    }
+    else {
+        return buf[elem];
+    }
+}
+
 //*** member functions  ***//
 
 int String::getLength() const {
