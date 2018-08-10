@@ -46,25 +46,18 @@ CaseString::CaseString(const char* chr) : String(chr) {
 
 CaseString& CaseString::operator=(const CaseString& cse) {
     String::operator=(cse);
+    lower = cse.lower;
+    upper = cse.upper;
     return *this;
 };
 
-void CaseString::print()
+void CaseString::print() {
+    
+    String::print();
+    cout << "Lower: " << lower << " " <<"Upper " << upper << endl;
+    csis << "Lower: " << lower << " " <<"Upper " << upper << endl;
+    
+};
 
-{
-    
-    cout << lower << " " << upper << endl;
-    
-    csis << lower << " " << upper << endl;
-    
-}
-
-CaseString::~CaseString()
-
-{
-    
-    delete [] lower;
-    
-    delete [] upper;
-    
-}
+CaseString::~CaseString() {
+};

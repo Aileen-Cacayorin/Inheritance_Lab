@@ -31,8 +31,8 @@ int main() {
     test17();
     test18();
     test19();
-//    test20();
-//    csis.close();
+    test20();
+    csis.close();
 }
 
 void test1() {
@@ -262,19 +262,19 @@ void test19() {
     wait();
 }
 
-//void test20() {
-//    cout << "20. Testing S20, T20, U20: CaseString class." << endl << endl;
-//    csis << "20. Testing S20, T20, U20: CaseString class." << endl << endl;
-//    CaseString s20("BaLLooN");
-//    CaseString t20;
-//    t20 = s20;
-//    s20.print();
-//    t20.print();
-//    
-//    CaseString u20(s20);
-//    u20.print();
-//    wait();
-//}
+void test20() {
+    cout << "20. Testing S20, T20, U20: CaseString class." << endl << endl;
+    csis << "20. Testing S20, T20, U20: CaseString class." << endl << endl;
+    CaseString s20("BaLLooN");
+    CaseString t20;
+    t20 = s20;
+    s20.print();
+    t20.print();
+    
+    CaseString u20(s20);
+    u20.print();
+    wait();
+}
 
 void wait() {
     char buf;

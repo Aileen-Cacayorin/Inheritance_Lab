@@ -16,16 +16,19 @@
 #include "String.h"
 
 class CaseString: public String {
+    private:
+        char* lower;
+        char* upper;
     
     public:
-        CaseString();
-        CaseString(const CaseString&);
-        CaseString(const char*);
-        CaseString& operator=(const CaseString&);
-        void print();
-        ~CaseString();
+        CaseString();                                                    // default constructor
+        CaseString(const CaseString&);                                   // copy constructor
+        CaseString(const char*);                                         // constructor with char argument
+        CaseString& operator=(const CaseString&);                        // asignment overloader
+        void print();                                                    // overwrites print function
+        ~CaseString();                                                   // destructor
     
 
 };
 
-#endif /* Case_hpp */
+#endif /* Case_h */
