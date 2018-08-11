@@ -46,8 +46,14 @@ CaseString::CaseString(const char* chr) : String(chr) {
 
 CaseString& CaseString::operator=(const CaseString& cse) {
     String::operator=(cse);
-    lower = cse.lower;
-    upper = cse.upper;
+    lower = new char[length+1];
+    upper = new char[length+1];
+    for (int i=0; i < length; i++) {
+        lower[i] = cse.buf[i];
+    }
+    for (int i=0; i < length; i++) {
+        upper[i] = cse.buf[i];
+    }
     return *this;
 };
 
@@ -59,4 +65,6 @@ void CaseString::print() {
 };
 
 CaseString::~CaseString() {
+    delete [] lower;
+    delete [] upper;
 };

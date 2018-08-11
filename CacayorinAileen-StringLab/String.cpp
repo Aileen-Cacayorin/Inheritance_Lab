@@ -74,14 +74,18 @@ String::String(char lttr, int n) {
 };
 
 String::~String() {
+    delete [] buf;
     length = 0;
-}
+};
 
 //***  assignment operator overloaders   ***//
 
 String& String::operator=(const String& rtStrng) {
     length = rtStrng.length;
-    buf = rtStrng.buf;
+    for (int i=0; i<length; i++) {
+        buf[i] = rtStrng.buf[i];
+    }
+    buf[length] = '\0';
     return *this;
 };
 

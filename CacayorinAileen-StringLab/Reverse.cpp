@@ -32,9 +32,7 @@ ReverseString& ReverseString::operator=(const ReverseString& rvrs) {
 };
 
 ReverseString ReverseString::operator~() {
-    ReverseString rvrs;
-    rvrs.buf = buf;
-    rvrs.length = length;
+    ReverseString rvrs(*this);
     
     ReverseString reverse;
     int count = 0;
